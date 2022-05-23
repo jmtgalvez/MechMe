@@ -1,0 +1,15 @@
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 450px);
+    justify-content: center;
+    gap: 30px;
+}
+.member-card {
+    background-color: #efefef;
+    color: black;
+}
+.member-card > .member-pic { width: 100%;}
+.member-card > .member-details {
+    margin: 2em;
+}
