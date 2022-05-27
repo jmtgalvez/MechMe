@@ -7,7 +7,7 @@
     --color-accent-font: white;
 
 }
-* { border: 1px solid white;}
+/* * { border: 1px solid white;} */
 * { box-sizing: border-box;}
 body {
     margin: 0;
@@ -53,6 +53,7 @@ main > * {
         padding-left: 20%;
     }
     header {
+        padding: 1em;
         height: 80vh;
         position: fixed;
         top: 0;
@@ -69,13 +70,19 @@ main > * {
         width: 15%;
         position: fixed;
         top: 0;
-        left: 5%;
-        padding: 100px 20px;
+        left: 10%;
+        margin: 100px 20px;
         flex-flow: row wrap;
         align-content: flex-start;
     }
     nav > a {
         flex: 1 0 100%;
+    }
+    main {
+        width: 65vw;
+        position: fixed;
+        top: 0;
+        right: 5vw;
     }
 }
 
@@ -84,7 +91,10 @@ main > * {
     body { padding: 0 30vw;}
     header { left: 10vw;}
     nav { left: 15vw;}
-    main { width: 55vw;}
+    main {
+        width: 55vw;
+        right: 10vw;
+    }
 }
 
 .hidden { display: none;}
