@@ -1,0 +1,25 @@
+.article-photo {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.article-photo > img {
+    width: 100%; max-width: 600px;
+}
+.article-photo > figcaption {
+    font-size: 0.8em;
+    color: rgba(255,255,255,80%);
+}
+.article-title { margin-bottom: 5rem;}
+.article-title > * { margin: 0;}
+article > p { text-indent: 4em;}
+
+@media screen and (min-width: 768px) {
+    .article-photo {
+        float: left;
+        margin-right: 3rem;
+    }
+    article p {
+        min-width: 300px;
+    }
+}

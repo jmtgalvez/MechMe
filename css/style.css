@@ -1,0 +1,109 @@
+/* * { border: 1px solid white;} */
+* { box-sizing: border-box;}
+body {
+    margin: 0;
+    min-height: 100px;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-weight: 900;}
+header {
+    padding: 2em;
+}
+header > h1 > a {
+    text-decoration: none;
+    color: white;
+}
+.subtitle { display: none;}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+nav > a:not([class="active"]):hover { text-decoration: underline;}
+nav > a.active {
+    font-weight: 900;
+    background-color: white;
+    color: black;
+}
+main > * {
+    padding: 50px 5%;
+    line-height: 1.5;
+}
+
+/* tables and ipads */
+@media screen and (min-width: 768px){
+    body {
+        padding-left: 20%;
+    }
+    header {
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        text-orientation: sideways;
+    }
+    header >  *,
+    .subtitle {
+        display: inline;
+    }
+    nav {
+        width: 15%;
+        position: fixed;
+        top: 0;
+        left: 5%;
+        padding: 100px 20px;
+        flex-flow: row wrap;
+        align-content: flex-start;
+    }
+    nav > a {
+        flex: 1 0 100%;
+    }
+}
+
+/* large screen */
+@media screen and (min-width: 1824px) {
+    body { margin: 0 10vw;}
+    header { left: 10vw;}
+    nav { left: 15vw;}
+}
+
+.hidden { display: none;}
+
+
+
+
+
+
+/* smartphones portrait and landscape */
+/* @media screen and (min-width:320px) and (max-width:480px) {
+    body { background-color: lightblue;}    
+} */
+/* smartphone portrait  */
+/* @media screen and (max-width:320px) {
+    body { background-color: lightgreen;}
+} */
+/* smartphone landscape */
+/* @media screen and (min-width:321px) {
+    body { background-color: lightpink;}
+} */
+/* tables and ipads */
+/* @media screen and (min-width:768px){
+    body { background-color: lightyellow;}
+} */
+/* desktop and laptop */
+/* @media screen and (min-width:1224px) {
+    body { background-color: lightslategray;}
+} */
+/* large screen */
+/* @media screen and (min-width:1824px) {
+    body { background-color: lightseagreen;}
+} */
