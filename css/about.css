@@ -28,6 +28,6 @@
     }
     #mission, #vision { flex: 1 1 45%;}
     .team-members {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 100%));
+        grid-template-columns: repeat(auto-fill, min(300px, 100%));
     }
 }
