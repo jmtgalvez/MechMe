@@ -26,21 +26,23 @@
 }
 .hero-caption h1 {
     height: min-content;
-    padding: 0 20%;
-    margin-bottom: 3rem;
+    padding: 0 10%;
+    margin-bottom: 1rem;
+    font-size: 1.25em;
 }
 .hero-caption a {
     text-decoration: none;
     border: none;
     border-radius: 5px;
 
-    background-color: black;
+    background-color: var(--color-accent-bg);
     width: fit-content;
     padding: 1rem;
     margin: auto;
 
+    font-size: 0.5em;
     font-weight: bold;
-    color: white;
+    color: var(--color-accent-font);
 
     cursor: pointer;
 }
@@ -52,7 +54,7 @@
 .articles > h2 { grid-column: 1/-1;}
 .article-card {
     width: 100%;
-    background-color: #fff;
+    background-color: #efefef;
     color: black;
 }
 .article-card-photo { width: 100%;}
@@ -67,12 +69,18 @@
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--color-accent-font);
     font-weight: bold;
     font-size: 0.8em;
-    background-color: black;
+    background-color: var(--color-accent-bg);
     padding: 1em;
 }
+
+@media screen and (min-width: 480px) {
+    .hero-caption h1 { font-size: 2em;}
+    .hero-caption a { font-size: 0.8em;}
+}
+
 @media screen and (min-width: 768px) {
     main > section:not(:last-child) {
         padding-bottom: 100px;
@@ -81,7 +89,7 @@
     .hero-caption { bottom: 100px;}
     .hero-caption h1 {
         margin-bottom: 5rem;
-        font-size: 2em;
     }
-    .articles { grid-template-columns: repeat(auto-fill, 300px);}
+    .articles { grid-template-columns: repeat(auto-fill, minmax(300px, 100%));}
+    .article-card-photo { height: 180px;}
 }

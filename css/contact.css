@@ -10,3 +10,9 @@ form textarea {
     padding: 0.5em;
     border-radius: 5px;;
 }
+
+form > input[type="submit"] {
+    background-color: #fefefe;
+    color: black;
+    font-weight: bold;
+}
