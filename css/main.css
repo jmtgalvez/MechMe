@@ -8,6 +8,9 @@
 .hero * {
     width: 100%;
 }
+.hero > img {
+    max-width: 100%;
+}
 .hero-caption {
     background-color: rgba(0, 0, 0, 60%);
 
@@ -49,6 +52,8 @@
 .articles {
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 .articles > h2 { grid-column: 1/-1;}
@@ -90,6 +95,6 @@
     .hero-caption h1 {
         margin-bottom: 5rem;
     }
-    .articles { grid-template-columns: repeat(auto-fill, min(300px, 100%));}
+    .articles { grid-template-columns: repeat(auto-fill, 300px);}
     .article-card-photo { height: 180px;}
 }
