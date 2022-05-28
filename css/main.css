@@ -21,7 +21,7 @@
     left: 0;
 
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 
     display: grid;
     align-items: center;
@@ -82,7 +82,7 @@
 }
 
 @media screen and (min-width: 480px) {
-    .hero-caption h1 { font-size: 2em;}
+    .hero-caption h1 { font-size: 1.5em;}
     .hero-caption a { font-size: 0.8em;}
 }
 
@@ -92,9 +92,11 @@
         border-bottom: 1px solid white;
     }
     .hero-caption { bottom: 100px;}
-    .hero-caption h1 {
-        margin-bottom: 5rem;
-    }
-    .articles { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+    .hero-caption h1 { margin-bottom: 5rem;}
+    .articles { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
     .article-card-photo { height: 180px;}
+}
+
+@media screen and (min-width: 1224px) {
+    .hero-caption h1 { font-size: 2em;}
 }

@@ -12,7 +12,7 @@
 body {
     margin: 0;
     max-width: 100vw;
-    min-height: 100px;
+    min-height: 100vh;
     background-color: black;
     color: var(--color-font);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -62,8 +62,8 @@ main > * {
         transform: rotate(-180deg);
         text-orientation: sideways;
     }
-    header >  *,
-    .subtitle {
+    header > .subtitle,
+    header > * {
         display: inline;
     }
     nav {
@@ -75,14 +75,10 @@ main > * {
         flex-flow: row wrap;
         align-content: flex-start;
     }
-    nav > a {
-        flex: 1 0 100%;
-    }
+    nav > a { flex: 1 0 100%;}
     main {
         width: 65vw;
-        position: fixed;
-        top: 0;
-        right: 5vw;
+        margin-left: 10%;
     }
 }
 
