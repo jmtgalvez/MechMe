@@ -26,7 +26,7 @@ textarea { resize: none;}
 
 /* HEADER */
 header {
-    padding: 2em;
+    padding: 0.5em 2em;
 }
 header > h1 > a {
     text-decoration: none;
@@ -115,7 +115,6 @@ main > * {
         width: 70vw;
         margin-left: 5%;
     }
-
     .go2top { display: none;}
 }
 
