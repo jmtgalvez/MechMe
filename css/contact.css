@@ -8,7 +8,7 @@ form input,
 form textarea {
     font-size: 1.5em;
     padding: 0.5em;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 form > input[type="submit"] {
