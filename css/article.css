@@ -1,10 +1,13 @@
+.back-link {
+    display: none;
+}
 .article-photo {
-    width: fit-content;
+    width: 100%;
     margin: auto;
     margin-bottom: 30px;
 }
 .article-photo > img {
-    width: 100%; max-width: 600px;
+    width: 100%;
 }
 .article-photo > figcaption {
     font-size: 0.8em;
@@ -12,14 +15,30 @@
 }
 .article-title { margin-bottom: 5rem;}
 .article-title > * { margin: 0;}
-article > p { text-indent: 4em;}
+article > pre {
+    font-family: var(--font-familys);
+
+    text-indent: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
 
 @media screen and (min-width: 768px) {
-    .article-photo {
-        float: left;
-        margin-right: 3rem;
+    .back-link {
+        cursor: pointer;
+
+        display: block;
+        width: fit-content;
+        padding: 0.5em 1em;
+        margin-bottom: 20px;
+
+        text-decoration: none;
+        color: var(--color-accent-font);
+        font-weight: 900;
+
+        background-color: var(--color-accent-bg);
+        border: 1px solid var(--color-accent-font);
+        box-shadow: 0 3px#cdcdcd;
     }
-    article p {
-        min-width: 300px;
-    }
+    .article-photo { padding: 0 10%;}
 }
