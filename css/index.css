@@ -101,7 +101,7 @@
     .hero { margin: 0;}
     .hero-caption { bottom: 100px;}
     .hero-caption h1 { margin-bottom: 5rem;}
-    #articles { grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));}
+    #articles { grid-template-columns: 50% 50%;}
     .article.card > h4 { max-height: 3em; overflow-y: hidden;}
 }
 
