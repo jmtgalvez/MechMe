@@ -12,6 +12,7 @@ form textarea {
 }
 
 form > input[type="submit"] {
+    cursor: pointer;
     background-color: #fefefe;
     color: black;
     font-weight: bold;
