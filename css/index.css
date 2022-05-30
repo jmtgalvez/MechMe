@@ -2,10 +2,12 @@
 .hero {
     width: 100%;
     height: min-content;
-    margin: 0;
+    margin: 20px 0;
     position: relative;
 }
-.hero * { width: 100%;}
+.hero * {
+    width: 100%;
+}
 .hero-caption {
     background-color: rgba(0, 0, 0, 60%);
 
@@ -54,6 +56,7 @@
 }
 
 @media screen and (min-width: 768px) {
+    .hero { margin: 0;}
     .hero-caption { bottom: 100px;}
     .hero-caption h1 { margin-bottom: 5rem;}
 }
