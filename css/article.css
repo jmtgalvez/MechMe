@@ -23,12 +23,6 @@ article > pre {
     word-wrap: break-word;
 }
 
-/* .comments > form {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-
-
 form {
     width: 100%;
     max-width: 450px;

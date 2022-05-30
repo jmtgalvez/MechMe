@@ -58,6 +58,26 @@ main > * {
     line-height: 1.5;
 }
 
+.go2top {
+    border: none;
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+
+    background-color: var(--color-reverse-bg);
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-reverse-font);
+    font-size: 1.5em;
+
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+}
+
 /* tables and ipads */
 @media screen and (min-width: 768px){
     body { padding-left: 20%;}
@@ -95,6 +115,8 @@ main > * {
         width: 70vw;
         margin-left: 5%;
     }
+
+    .go2top { display: none;}
 }
 
 /* large screen */
