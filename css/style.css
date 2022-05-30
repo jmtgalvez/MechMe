@@ -2,7 +2,7 @@
 :root {
     --off-white: #f5f5f5;
     --off-black: #0c0d0e;
-    --color-bg: var(--off-black);
+    --color-bg: black;
     --color-font: var(--off-white);
     --color-reverse-bg: var(--color-font);
     --color-reverse-font: var(--color-bg);
